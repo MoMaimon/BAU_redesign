@@ -3,41 +3,38 @@
 /* -------------------------------------------------------------------------- */
 
 :root {
-    --Emerald-green: #006847;
-    --University-gold : #C5A059;
-    --White : #FFFFFF;
-    --Surface-gray  : #F3F4F6;
-    --Text-gray : #6B7280;
+  --Emerald-green: #006847;
+  --University-gold: #c5a059;
+  --White: #ffffff;
+  --Surface-gray: #f3f4f6;
+  --Text-gray: #6b7280;
 }
 
 * {
-    box-sizing: border-box;    
-    
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #FFF;
-    /* width: 1000px; */
-    /* height: 100dvh; */
-    /* background: #572828; */
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  /* width: 1000px; */
+  /* height: 100dvh; */
+  /* background: #572828; */
 }
 
 button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
-
 
 .cairo-bold {
   font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
 }
 
 .cairo-semi-bold {
@@ -45,8 +42,7 @@ button {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
 }
 
 .cairo-reguler {
@@ -54,8 +50,15 @@ button {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -63,51 +66,209 @@ button {
 /* -------------------------------------------------------------------------- */
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background: #000; */
-    padding: 12px;
-    height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #000; */
+  padding: 12px;
+  height: 96px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-name {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
-.logo-name > h1 , h3 {
-    margin: 0;
+.logo-name > h1,
+h3 {
+  margin: 0;
 }
 .logo-name > h1 {
-    font-size: 24px;
-    color: var(--Emerald-green);
+  font-size: 24px;
+  color: var(--Emerald-green);
 }
 
 .logo-name > h3 {
-    font-size: 14px;
-    color: var(--Text-gray);
-    
+  font-size: 14px;
+  color: var(--Text-gray);
 }
 .left-nav {
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-    width: 10%;
-    color: var(--Text-gray);
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  width: 10%;
+  color: var(--Text-gray);
 }
 
 hr {
-    height: 6px;
-    background: var(--Emerald-green);
-    background: linear-gradient(90deg,var(--Emerald-green) 0%, var(--University-gold) 50%, var(--Emerald-green) 100%);
-    border: none;
-    outline: none;
+  height: 6px;
+  background: var(--Emerald-green);
+  background: linear-gradient(
+    90deg,
+    var(--Emerald-green) 0%,
+    var(--University-gold) 50%,
+    var(--Emerald-green) 100%
+  );
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Login Card                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- Top Card -------------------------------- */
+.login-card {
+  /* background: #00000077; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 686px;
+  border-radius: 16px;
+  padding: 40px 40px 0px 40px;
+  box-shadow:
+    inset 0px 8px var(--Emerald-green),
+    0px 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.login-card-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #000; */
+  padding-top: 64px;
+}
+
+.login-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 40px; */
+}
+
+.login-card-top > * {
+  margin: 0;
+}
+
+.user-icon {
+  background: rgba(0, 104, 71, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.login-card-top > h2 {
+  color: #1f2937;
+  font-size: 30px;
+}
+
+.login-card-top > h3 {
+  color: var(--Text-gray);
+  font-size: 16px;
+}
+
+/* ---------------------------------- Form ---------------------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 24px;
+}
+
+from > label {
+  font-size: 14px;
+  color: #374151;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 8px;
+}
+
+.field-input {
+  display: flex;
+  align-items: center;
+
+  border-radius: 8px;
+  border: #e5e7eb 2px solid;
+  height: 48px;
+  gap: 24px;
+  /* background: #3cac20; */
+  padding: 0px 10px;
+}
+
+.field-input > input {
+  outline: none;
+  border: none;
+  direction: rtl;
+  height: 100%;
+  width: 472px;
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #9ca3af;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button[type="submit"] {
+  background: var(--University-gold);
+  width: 100%;
+  border-radius: 8px;
+  height: 56px;
+  color: var(--White);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ------------------------------- Bottom Card ------------------------------ */
+.login-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.login-card-bottom > a {
+  text-decoration: none;
+  color: var(--Emerald-green);
+}
+.login-card > p {
+  color: #9ca3af;
+  font-size: 12px;
 }
