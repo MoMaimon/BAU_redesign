@@ -1,0 +1,113 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Global                                   */
+/* -------------------------------------------------------------------------- */
+
+:root {
+    --Emerald-green: #006847;
+    --University-gold : #C5A059;
+    --White : #FFFFFF;
+    --Surface-gray  : #F3F4F6;
+    --Text-gray : #6B7280;
+}
+
+* {
+    box-sizing: border-box;    
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    /* width: 1000px; */
+    /* height: 100dvh; */
+    /* background: #572828; */
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.cairo-bold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.cairo-semi-bold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.cairo-reguler {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Nav Bar                                  */
+/* -------------------------------------------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #000; */
+    padding: 12px;
+    height: 96px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.logo-name > h1 , h3 {
+    margin: 0;
+}
+.logo-name > h1 {
+    font-size: 24px;
+    color: var(--Emerald-green);
+}
+
+.logo-name > h3 {
+    font-size: 14px;
+    color: var(--Text-gray);
+    
+}
+.left-nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    width: 10%;
+    color: var(--Text-gray);
+}
+
+hr {
+    height: 6px;
+    background: var(--Emerald-green);
+    background: linear-gradient(90deg,var(--Emerald-green) 0%, var(--University-gold) 50%, var(--Emerald-green) 100%);
+    border: none;
+    outline: none;
+}
