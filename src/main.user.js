@@ -5,6 +5,9 @@
 // @match        *://*.bau.edu.jo/*
 // @match        *://*.bau.edu.jo:7799/*
 // @run-at       document-start
+//
+// @updateURL    https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/src/main.user.js
+// @downloadURL  https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/src/main.user.js
 // @resource     loginPortalHTML https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/pages/login_portal/index.html
 // @resource     loginCSS  https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/pages/login_portal/style.css
 // @grant        GM_getResourceText
@@ -46,8 +49,7 @@
         myNewCSS = GM_getResourceText("loginCSS");
       } else {
         // Fallback for when we detect the Student Dashboard instead
-        myNewHTML =
-          "<h1>Welcome to the Student Dashboard (Work in Progress!)</h1>";
+        hideStyle.remove();
       }
 
       // Apply the CSS function and OVERWRITE myNewHTML with the result
