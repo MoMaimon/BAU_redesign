@@ -18,9 +18,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  /* width: 1000px; */
-  /* height: 100dvh; */
-  /* background: #572828; */
 }
 
 button {
@@ -69,7 +66,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #000; */
   padding: 12px;
   height: 96px;
 }
@@ -126,7 +122,6 @@ hr {
 
 /* -------------------------------- Top Card -------------------------------- */
 .login-card {
-  /* background: #00000077; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -143,7 +138,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #000; */
   padding-top: 64px;
 }
 
@@ -152,7 +146,6 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin-top: 40px; */
 }
 
 .login-card-top > * {
@@ -206,7 +199,6 @@ from > label {
   border: #e5e7eb 2px solid;
   height: 48px;
   gap: 24px;
-  /* background: #3cac20; */
   padding: 0px 10px;
 }
 
