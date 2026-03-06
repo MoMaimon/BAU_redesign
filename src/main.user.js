@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         BAU Portal Overhaul
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @match        *://*.bau.edu.jo/*
 // @match        *://*.bau.edu.jo:7799/*
 // @run-at       document-start
 //
-// @updateURL    https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/src/main.user.js
-// @downloadURL  https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/src/main.user.js
-// @resource     loginPortalHTML https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/pages/login_portal/index.html
-// @resource     loginCSS  https://raw.githubusercontent.com/MoMaimon/BAU_redesign/login_portal/pages/login_portal/style.css
+// @updateURL    https://raw.githubusercontent.com/MoMaimon/BAU_redesign/main/src/main.user.js
+// @downloadURL  https://raw.githubusercontent.com/MoMaimon/BAU_redesign/main/src/main.user.js
+// @resource     loginPortalHTML https://raw.githubusercontent.com/MoMaimon/BAU_redesign/main/pages/login_portal/index.html
+// @resource     loginCSS  https://raw.githubusercontent.com/MoMaimon/BAU_redesign/main/pages/login_portal/style.css
 // @grant        GM_getResourceText
 // ==/UserScript==
 
