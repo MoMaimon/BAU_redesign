@@ -17,7 +17,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #ffffff;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -54,8 +57,10 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
+  grid-column-gap: 48px;
   grid-row-gap: 0px;
+  flex-grow: 1;
+  padding: 64px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -126,7 +131,8 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 686px;
+  height: 100%;
+  width: 100%;
   border-radius: 16px;
   padding: 40px 40px 0px 40px;
   box-shadow:
@@ -138,7 +144,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 64px;
+  height: 85%;
+  width: 100%;
 }
 
 .login-card-top {
@@ -260,4 +267,80 @@ button[type="submit"] {
 .login-card > p {
   color: #9ca3af;
   font-size: 12px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Links                                   */
+/* -------------------------------------------------------------------------- */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------- Links Card ------------------------------- */
+
+.links-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: inset 8px 0px var(--University-gold);
+  width: 100%;
+  padding: 32px;
+  gap: 24px;
+}
+.links-card h2 {
+  font-size: 30px;
+  color: var(--Emerald-green);
+  margin: 0;
+}
+.links-card h3 {
+  font-size: 18px;
+  color: var(--Text-gray);
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+}
+
+.link-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.link-text a {
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: #1f2937;
+}
+/* ------------------------------- Extra Links ------------------------------ */
+
+.extra-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.extra-links h3 {
+  font-size: 18px;
+  color: var(--Emerald-green);
+}
+.extra-links a {
+  text-decoration: none;
+  color: #4B5563;
 }
