@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,16 @@
   </head>
   <body class="cairo-reguler">
     <nav>
+      <div class="logo">
+        <img
+          src="https://www.bau.edu.jo/content/NewFolder/logonews.png"
+          alt="logo"
+        />
+        <div class="logo-name">
+          <h1>جامعة البلقاء التطبيقية</h1>
+          <h3>وحدة القبول والتسجيل</h3>
+        </div>
+      </div>
       <div class="left-nav">
         <button class="switch-mode-btn">
           <svg
@@ -43,16 +53,6 @@
             />
           </svg>
         </button>
-      </div>
-      <div class="logo">
-        <div class="logo-name">
-          <h1>جامعة البلقاء التطبيقية</h1>
-          <h3>وحدة القبول والتسجيل</h3>
-        </div>
-        <img
-          src="https://www.bau.edu.jo/content/NewFolder/logonews.png"
-          alt="logo"
-        />
       </div>
     </nav>
     <hr />
@@ -85,12 +85,6 @@
             <div class="field">
               <label>رقم الطالب</label>
               <div class="field-input">
-                <input
-                  type="number"
-                  name="username"
-                  required
-                  placeholder="مثال : 202310101"
-                />
                 <svg
                   width="17"
                   height="17"
@@ -103,18 +97,18 @@
                     fill="#006847"
                   />
                 </svg>
+                <input
+                  type="number"
+                  name="username"
+                  required
+                  placeholder="مثال : 202310101"
+                />
               </div>
             </div>
 
             <div class="field">
               <label>كلمة المرور</label>
               <div class="field-input">
-                <input
-                  type="password"
-                  name="password"
-                  required
-                  placeholder="••••••••"
-                />
                 <svg
                   width="17"
                   height="21"
@@ -127,10 +121,17 @@
                     fill="#006847"
                   />
                 </svg>
+                <input
+                  type="password"
+                  name="password"
+                  required
+                  placeholder="••••••••"
+                />
               </div>
             </div>
 
             <button type="submit" class="my-custom-button">
+              <span class="submit-text cairo-bold">دخول</span>
               <svg
                 width="20"
                 height="18"
@@ -143,12 +144,10 @@
                   fill="white"
                 />
               </svg>
-              <span class="submit-text cairo-bold">دخول</span>
             </button>
           </form>
           <div class="login-card-bottom">
-            <a href=""
-              ><span>هل نسيت كلمة المرور؟</span>
+            <a href="">
               <svg
                 width="13"
                 height="11"
@@ -161,9 +160,10 @@
                   fill="#006847"
                 />
               </svg>
+              <span>هل نسيت كلمة المرور؟</span>
             </a>
           </div>
-          <p>%نظام آمن ومشفر 100</p>
+          <p>نظام آمن ومشفر 100%</p>
         </div>
       </div>
     </main>
