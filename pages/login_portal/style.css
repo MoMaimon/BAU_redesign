@@ -107,7 +107,7 @@ h3 {
   color: var(--Text-gray);
 }
 
-hr {
+#nav-hr {
   height: 6px;
   background: var(--Emerald-green);
   background: linear-gradient(
@@ -342,5 +342,45 @@ button[type="submit"] {
 }
 .extra-links a {
   text-decoration: none;
-  color: #4B5563;
+  color: #4b5563;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+  border-top: solid 1px #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--Text-gray);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+#footer-hr {
+  width: 1px;
+  height: 16px;
+  background: #D1D5DB;
 }
