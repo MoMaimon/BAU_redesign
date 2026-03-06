@@ -1,0 +1,386 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Global                                   */
+/* -------------------------------------------------------------------------- */
+
+:root {
+  --Emerald-green: #006847;
+  --University-gold: #c5a059;
+  --White: #ffffff;
+  --Surface-gray: #f3f4f6;
+  --Text-gray: #6b7280;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cairo-bold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.cairo-semi-bold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.cairo-reguler {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 48px;
+  grid-row-gap: 0px;
+  flex-grow: 1;
+  padding: 64px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Nav Bar                                  */
+/* -------------------------------------------------------------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  height: 96px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name > h1,
+h3 {
+  margin: 0;
+}
+.logo-name > h1 {
+  font-size: 24px;
+  color: var(--Emerald-green);
+}
+
+.logo-name > h3 {
+  font-size: 14px;
+  color: var(--Text-gray);
+}
+.left-nav {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  width: 10%;
+  color: var(--Text-gray);
+}
+
+#nav-hr {
+  height: 6px;
+  background: var(--Emerald-green);
+  background: linear-gradient(
+    90deg,
+    var(--Emerald-green) 0%,
+    var(--University-gold) 50%,
+    var(--Emerald-green) 100%
+  );
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Login Card                                 */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- Top Card -------------------------------- */
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  padding: 40px 40px 0px 40px;
+  box-shadow:
+    inset 0px 8px var(--Emerald-green),
+    0px 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.login-card-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  width: 100%;
+}
+
+.login-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card-top > * {
+  margin: 0;
+}
+
+.user-icon {
+  background: rgba(0, 104, 71, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.login-card-top > h2 {
+  color: #1f2937;
+  font-size: 30px;
+}
+
+.login-card-top > h3 {
+  color: var(--Text-gray);
+  font-size: 16px;
+}
+
+/* ---------------------------------- Form ---------------------------------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+from > label {
+  font-size: 14px;
+  color: #374151;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-input {
+  display: flex;
+  align-items: center;
+
+  border-radius: 8px;
+  border: #e5e7eb 2px solid;
+  height: 48px;
+  gap: 24px;
+  padding: 0px 10px;
+}
+
+.field-input > input {
+  outline: none;
+  border: none;
+  direction: rtl;
+  height: 100%;
+  width: 472px;
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #9ca3af;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button[type="submit"] {
+  background: var(--University-gold);
+  width: 100%;
+  border-radius: 8px;
+  height: 56px;
+  color: var(--White);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ------------------------------- Bottom Card ------------------------------ */
+.login-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.login-card-bottom > a {
+  text-decoration: none;
+  color: var(--Emerald-green);
+}
+.login-card > p {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Links                                   */
+/* -------------------------------------------------------------------------- */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------- Links Card ------------------------------- */
+
+.links-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: inset 8px 0px var(--University-gold);
+  width: 100%;
+  padding: 32px;
+  gap: 24px;
+}
+.links-card h2 {
+  font-size: 30px;
+  color: var(--Emerald-green);
+  margin: 0;
+}
+.links-card h3 {
+  font-size: 18px;
+  color: var(--Text-gray);
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+}
+
+.link-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.link-text a {
+  margin: 0;
+  font-size: 18px;
+  text-decoration: none;
+  color: #1f2937;
+}
+/* ------------------------------- Extra Links ------------------------------ */
+
+.extra-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.extra-links h3 {
+  font-size: 18px;
+  color: var(--Emerald-green);
+}
+.extra-links a {
+  text-decoration: none;
+  color: #4b5563;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+  border-top: solid 1px #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 24px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--Text-gray);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+#footer-hr {
+  width: 1px;
+  height: 16px;
+  background: #D1D5DB;
+}
